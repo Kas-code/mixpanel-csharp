@@ -15,7 +15,7 @@ namespace Mixpanel.Tests.Unit
         protected static readonly DateTime Time = new DateTime(2013, 11, 30, 0, 0, 0, DateTimeKind.Utc);
         protected static readonly DateTimeOffset TimeOffset = new DateTimeOffset(2013, 11, 30, 0, 0, 0, TimeSpan.Zero);
         protected const long TimeUnix = 1385769600L;
-        protected const string TimeFormat = "2013-11-30T00:00:00";
+        protected const string TimeFormat = "2013-11-30T00:00:00.000";
         protected const double DurationSeconds = 2.34D;
         protected static readonly TimeSpan Duration = TimeSpan.FromSeconds(DurationSeconds);
         protected const string Os = "Windows";
@@ -28,7 +28,7 @@ namespace Mixpanel.Tests.Unit
         protected const string LastName = "Vader";
         protected const string Name = "Darth Vader";
         protected static readonly DateTime Created = new DateTime(2014, 10, 22, 0, 0, 0, DateTimeKind.Utc);
-        protected const string CreatedFormat = "2014-10-22T00:00:00";
+        protected const string CreatedFormat = "2014-10-22T00:00:00.000";
         protected const string Email = "darth.vader@mail.com";
         protected const string Phone = "589741";
         protected const string Alias = "999";

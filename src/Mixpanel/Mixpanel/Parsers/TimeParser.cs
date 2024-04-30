@@ -6,7 +6,7 @@ namespace Mixpanel.Parsers
     internal static class TimeParser
     {
         private const long UnixEpoch = 621355968000000000L;
-        private const string MixpanelDateFormat = "yyyy-MM-ddTHH:mm:ss";
+        private const string MixpanelDateFormat = "yyyy-MM-ddTHH:mm:ss.fff";
 
         public static ValueParseResult ParseUnix(object rawDateTime)
         {
@@ -65,7 +65,7 @@ namespace Mixpanel.Parsers
 
                 default:
                     return ValueParseResult.CreateFail(
-                        "Expected types are: DateTime, DateTimeOffset or correctly formatted Mixpanel date string (yyyy-MM-ddTHH:mm:ss).");
+                        "Expected types are: DateTime, DateTimeOffset or correctly formatted Mixpanel date string (yyyy-MM-ddTHH:mm:ss.fff).");
             }
         }
     }
